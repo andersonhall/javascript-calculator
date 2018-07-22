@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #d1e2ff
+}
+h1 {
+  font-weight: 600;
+  padding: 100px 0 0 0;
+  text-align: center;
+  font-size: 40px;
+}
+p {
+  text-align: center;
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+.calculator {
+  width: 350px;
+  margin: auto;
+  background-color: rgb(100, 100, 100);
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px 1px
+}
+.display {
+  background-color: rgb(50, 50, 50);
+  color : azure;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;;
+  text-align: right;
+  height: 80px;
+}
+.answer,
+.current {
+  height: 50%;
+}
+.answer {
+  font-size: 50%;
+  opacity: 0.8;
+}
+.buttonContainer {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttonContainer > * {
+  background-color: rgb(200, 200, 200);
+  padding: 20px;
+  font-size: 25px;
+}
+.operation {
+  background-color: #aaa;
+}
+#equals {
+  grid-area: 2 / 4 / 6 / 5;
+  background-color: coral;
+}
+button {
+  border: none;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  .calculator {
+    border-radius: 0px;
+  }
+} 

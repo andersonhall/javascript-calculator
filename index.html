@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JS Calculator</title>
+  <meta name="description" content="JS Calculator">
+  <meta name="author" content="Andy Hall">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BASIC CALCULATOR</h1>
+    <p>Use mouse or numpad for input.</p>
+    <div class="calculator">
+      <div class="display">
+        <div class="answer"></div>        <div class="current"></div>
+      </div>
+      <div class="buttonContainer">
+        <button id="+" data-key="107" class="operation">+</button>
+        <button id="-" data-key="109" class="operation">-</button>
+        <button id="*" data-key="106" class="operation">×</button>
+        <button id="/" data-key="111" class="operation">÷</button>
+        <button id="7" data-key="105" class="digit">7</button>
+        <button id="8" data-key="104" class="digit">8</button>
+        <button id="9" data-key="103" class="digit">9</button>
+        <button id="4" data-key="100" class="digit">4</button>
+        <button id="5" data-key="101" class="digit">5</button>
+        <button id="6" data-key="102" class="digit">6</button>
+        <button id="1" data-key="97" class="digit">1</button>
+        <button id="2" data-key="98" class="digit">2</button>
+        <button id="3" data-key="99" class="digit">3</button>
+        <button id="0" data-key="96" class="digit">0</button>
+        <button id="decimal" data-key="110" class="digit">.</button>
+        <button id="clearAll" data-key="120" class="function">CE</button>
+        <button id="equals" data-key="13" class="operation">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
